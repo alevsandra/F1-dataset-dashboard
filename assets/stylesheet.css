@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+html {
+  background: rgb(57, 81, 85);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100% !important;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  background-color: transparent;
+}
+
+/* background color of dropdown - ensures not the whole div is this bg colour*/
+#race_year > div > div {background-color: rgb(57, 81, 85);}
+/*changes color of keyboard inputted text in dropdown*/
+#race_year input{
+   color: white !important;
+}
+/*changes colors of current selected year*/
+#race_year .Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single > .Select-control .Select-value .Select-value-label { color: white; }
